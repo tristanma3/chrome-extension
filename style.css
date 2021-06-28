@@ -1,0 +1,23 @@
+body {
+  width: 200px;
+  height: 300px;
+}
+input {
+  display: block;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+}
+button {
+  font-size: 20px;
+  width: 198px;
+  height: 100px;
+  padding: 10px 24px;
+}
+.bigfont {
+  font-size: 40px;
+}
+.smallfont {
+  font-size: 10px;
+}

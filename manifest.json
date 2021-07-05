@@ -12,5 +12,8 @@
     "default_icon": "icon16.png",
     "default_popup": "popup.html"
   },
-  "permissions": ["scripting", "tabs", "activeTab"]
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "tabs", "activeTab", "storage"]
 }

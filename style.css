@@ -15,6 +15,12 @@ button {
   height: 100px;
   padding: 10px 24px;
 }
+button1 {
+  font-size: 20px;
+  width: 198px;
+  height: 100px;
+  padding: 10px 24px;
+}
 .bigfont {
   font-size: 40px;
 }

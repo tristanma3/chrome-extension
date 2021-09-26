@@ -2,3 +2,36 @@ save the state(active tabs, time opened)-mark time when open tab
 track the website without opening the extension
 
 create a list(ordered by times) to save the times when tabs are opened
+
+add a listener function for when closing tabs (add null urls placeholder...)
+
+
+
+
+
+//tracking the time spent on each url (future can be website)
+//track for all time/ whenever the extension is started (future can track specific time sections)
+//take current tab time and subtract previous tab time to find how long the previous tab was active
+0 - 1 - 2;
+3;
+4;
+
+//after calculating time spent on active tab, create new object with url/time active
+//key of object is website url --> gets combined time of all the similar urls
+function tracker(log) {} 
+HashMap<String, double> timeSpent = new HashMap<String, double>();
+for(int i = 0; i<result.length;i++){
+    String url1 = result[i].getUrl();
+    if(i==result.length-1)
+    {
+        double time1 = curentTime - result[i].getTime();
+    }
+    else
+    {
+        double time1 = result[i+1].getTime()-result[i].getTime();
+    }
+    timeSpent.put(url1,time1);
+}
+
+
+create d3 graph (bar) use percentages or just minuites

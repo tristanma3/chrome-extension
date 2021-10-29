@@ -5,8 +5,11 @@ Date.prototype.addHours = function (h) {
 
 const now = new Date();
 const log = [
-  { url: "chrome://newtab/", time: now.addHours(1) },
+  { url: "chrome://newtab1/", time: now.addHours(3) },
+  { url: "chrome://newtab2/", time: now.addHours(2) },
+  { url: "chrome://newtab3/", time: now.addHours(1) },
   { url: "https://www.chess.com/home", time: now },
+  { url: "chrome://newtab/", time: now.addHours(1) },
 ];
 
 function tracker(log, now) {
@@ -14,11 +17,10 @@ function tracker(log, now) {
   log.forEach((element, index) => {
     console.log(element);
     if (index == log.length - 1) {
-      timeSpentPerWebsite[element.url] =
-        (new Date().getTime() - log[index].time.getTime()) / 60000;
+      timeSpentPerWebsite[element.url] = (Date.now() - log[index].time) / 60000;
     } else {
       timeSpentPerWebsite[element.url] =
-        (log[index + 1].time.getTime() - log[index].time.getTime()) / 60000;
+        (log[index + 1].time - log[index].time) / 60000;
     }
   });
   return timeSpentPerWebsite;

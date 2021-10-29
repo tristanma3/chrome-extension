@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Background Changer",
+  "name": "Background Timetracker",
   "version": "1.0.0",
-  "description": "Does stuff with the background.",
+  "description": "Keeps track of website time usage.",
   "icons": {
     "128": "icon128.png",
     "48": "icon48.png",
